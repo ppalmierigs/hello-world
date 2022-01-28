@@ -1,0 +1,55 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-datatable {
+   table {
+      width: 100%;
+      height: 100%;
+   }
+
+   th,
+   td {
+      text-align: left;
+      height: min-content;
+      padding: 0px;
+   }
+
+   .assistant-dt-xxs-width {
+      width: $assistant-xxs-perc-width;
+   }
+
+   .assistant-dt-xs-width {
+      width: $assistant-xs-perc-width;
+   }
+
+   .assistant-dt-s-width {
+      width: $assistant-s-perc-width;
+   }
+
+   .assistant-dt-m-width {
+      width: $assistant-m-perc-width;
+   }
+
+   .assistant-dt-l-width {
+      width: $assistant-l-perc-width;
+   }
+
+   .assistant-dt-xl-width {
+      width: $assistant-xl-perc-width;
+   }
+
+   .assistant-dt-xxl-width {
+      width: $assistant-xxl-perc-width;
+   }
+
+   .p-progressbar {
+      height: 10px;
+      background-color: $assistant-color-primary-dark !important;
+      border-radius: 5px;
+
+      .p-progressbar-value {
+         background: $assistant-color-white !important;
+         border-radius: 5px;
+      }
+   }
+}

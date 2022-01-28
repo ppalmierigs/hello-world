@@ -1,0 +1,43 @@
+@import '../../../../assets/styles/sizes.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-text-area {
+   $assistant-ta-increase: 4;
+
+   @mixin height($padding) {
+      height: -webkit-calc(#{$padding} * #{$assistant-ta-increase}) !important;
+      height: -moz-calc(#{$padding} * #{$assistant-ta-increase}) !important;
+      height: calc(#{$padding} * #{$assistant-ta-increase}) !important;
+   }
+
+   .assistant-ta-size-xxs {
+      @include height($assistant-xxs-padding);
+   }
+
+   .assistant-ta-size-xs {
+      @include height($assistant-xs-padding);
+   }
+
+   .assistant-ta-size-s {
+      @include height($assistant-s-padding);
+   }
+
+   .assistant-ta-size-m {
+      @include height($assistant-m-padding);
+   }
+
+   .assistant-ta-size-l {
+      @include height($assistant-l-padding);
+   }
+
+   .assistant-ta-size-xl {
+      @include height($assistant-xl-padding);
+   }
+
+   .assistant-ta-size-xxl {
+      @include height($assistant-xxl-padding);
+   }
+}

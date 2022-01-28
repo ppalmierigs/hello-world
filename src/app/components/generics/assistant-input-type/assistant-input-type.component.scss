@@ -1,0 +1,45 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-input-type {
+   label {
+      color: $assistant-color-text1;
+   }
+
+   input {
+      width: 100%;
+      border: none;
+      margin-top: 5px;
+      background-color: $assistant-color-bg2;
+   }
+
+   input:-webkit-autofill,
+   input:-webkit-autofill:focus {
+      /* Change the color to your own background color */
+      -webkit-box-shadow: 0 0 0 50px $assistant-color-bg2 inset;
+   }
+
+   .assistant-it-xxs-radius {
+      border-radius: $assistant-xxs-radius;
+   }
+
+   .assistant-it-xs-radius {
+      border-radius: $assistant-xs-radius;
+   }
+
+   .assistant-it-s-radius {
+      border-radius: $assistant-s-radius;
+   }
+
+   .assistant-it-m-radius {
+      border-radius: $assistant-m-radius;
+   }
+
+   .assistant-it-l-radius {
+      border-radius: $assistant-l-radius;
+   }
+
+   .assistant-it-xl-radius {
+      border-radius: $assistant-xl-radius;
+   }
+}

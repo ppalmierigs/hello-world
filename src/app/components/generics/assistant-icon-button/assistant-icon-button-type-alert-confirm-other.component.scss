@@ -1,0 +1,60 @@
+@import '../../../../assets/styles/colors.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-icon-button {
+   .assistant-ic-alert-btn {
+      background-color: $assistant-color-alert;
+      border-color: $assistant-color-alert;
+   }
+
+   .assistant-ic-alert2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-alert;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-alert3-btn {
+      color: $assistant-color-alert;
+   }
+
+   .assistant-ic-confirm-btn {
+      background-color: $assistant-color-confirm;
+      border-color: $assistant-color-confirm;
+   }
+
+   .assistant-ic-confirm2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-confirm;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-confirm3-btn {
+      color: $assistant-color-confirm;
+   }
+
+   .assistant-ic-other-btn {
+      background-color: $assistant-color-other;
+      border-color: $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-other2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-other3-btn {
+      color: $assistant-color-other;
+   }
+
+   .assistant-ic-alert3-btn,
+   .assistant-ic-confirm3-btn,
+   .assistant-ic-other3-btn {
+      background-color: $assistant-color-bg3;
+      border: 0px;
+   }
+}

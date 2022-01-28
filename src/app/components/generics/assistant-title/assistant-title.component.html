@@ -1,0 +1,9 @@
+<span class="assistant-title">
+   <span
+      class="assistant-t assistant-t-{{ size }} assistant-t-{{ fontColor }}"
+      [ngClass]="{ 'assistant-t-uppercase': uppercase == true, 'assistant-t-bold': bold == true, 'assistant-t-wrap': wrap == true }"
+   >
+      <span *ngIf="i18nLabel">{{ i18nLabel | translate }}</span>
+      <span *ngIf="!i18nLabel && label">{{ label }}</span>
+   </span>
+</span>

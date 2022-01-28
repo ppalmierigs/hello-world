@@ -1,0 +1,51 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-flat-card {
+   .assistant-fc-p-card {
+      box-shadow: none;
+      text-align: justify;
+
+      .p-card-body {
+         width: 100%;
+      }
+   }
+
+   .assistant-fc-xxs-radius {
+      border-radius: $assistant-xxs-radius;
+   }
+   .assistant-fc-xs-radius {
+      border-radius: $assistant-xs-radius;
+   }
+   .assistant-fc-s-radius {
+      border-radius: $assistant-s-radius;
+   }
+   .assistant-fc-m-radius {
+      border-radius: $assistant-m-radius;
+   }
+   .assistant-fc-l-radius {
+      border-radius: $assistant-l-radius;
+   }
+   .assistant-fc-xl-radius {
+      border-radius: $assistant-xl-radius;
+   }
+
+   .assistant-fc-xxs-padding {
+      padding: $assistant-xxs-padding;
+   }
+   .assistant-fc-xs-padding {
+      padding: $assistant-xs-padding;
+   }
+   .assistant-fc-s-padding {
+      padding: $assistant-s-padding;
+   }
+   .assistant-fc-m-padding {
+      padding: $assistant-m-padding;
+   }
+   .assistant-fc-l-padding {
+      padding: $assistant-l-padding;
+   }
+   .assistant-fc-xl-padding {
+      padding: $assistant-xl-padding;
+   }
+}

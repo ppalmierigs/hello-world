@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/sizes.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-box-container {
+   @mixin padding($padding) {
+      padding: -webkit-calc(#{$padding} / 2) $padding -webkit-calc(#{$padding} / 2) $padding;
+      padding: -moz-calc(#{$padding} / 2) $padding -moz-calc(#{$padding} / 2) $padding;
+      padding: calc(#{$padding} / 2) $padding calc(#{$padding} / 2) $padding;
+   }
+
+   .assistant-bc-xxs-padding {
+      @include padding($assistant-xxs-padding);
+   }
+   .assistant-bc-xs-padding {
+      @include padding($assistant-xs-padding);
+   }
+   .assistant-bc-s-padding {
+      @include padding($assistant-s-padding);
+   }
+   .assistant-bc-m-padding {
+      @include padding($assistant-m-padding);
+   }
+   .assistant-bc-l-padding {
+      @include padding($assistant-l-padding);
+   }
+   .assistant-bc-xl-padding {
+      @include padding($assistant-xl-padding);
+   }
+   .assistant-bc-xxl-padding {
+      @include padding($assistant-xxl-padding);
+   }
+}

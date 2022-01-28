@@ -1,0 +1,56 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-dialog {
+   .p-dialog {
+      box-shadow: none !important;
+   }
+
+   .p-dialog-header {
+      border-top-left-radius: $assistant-xl-padding !important;
+      border-top-right-radius: $assistant-xl-padding !important;
+      padding-bottom: $assistant-s-padding !important;
+   }
+
+   .p-dialog-content {
+      padding-top: $assistant-m-padding !important;
+      padding-bottom: $assistant-m-padding !important;
+      text-align: left !important;
+   }
+
+   .p-dialog-footer {
+      border-bottom-right-radius: $assistant-xl-padding !important;
+      border-bottom-left-radius: $assistant-xl-padding !important;
+      padding-top: $assistant-m-padding !important;
+   }
+
+   .pi-circle-fill {
+      color: $assistant-color-alert;
+   }
+
+   .assistant-d-xxs {
+      width: 20vw;
+   }
+
+   .assistant-d-xs {
+      width: 30vw;
+   }
+   .assistant-d-s {
+      width: 40vw;
+   }
+   .assistant-d-m {
+      width: 50vw;
+   }
+
+   .assistant-d-l {
+      width: 65vw;
+   }
+
+   .assistant-d-xl {
+      width: 80vw;
+   }
+
+   .assistant-d-xxl {
+      width: 90vw;
+   }
+}

@@ -1,0 +1,78 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-text-area {
+   .assistant-ta {
+      background: none !important;
+      border: none !important;
+      width: 100%;
+   }
+
+   .assistant-ta-font-color-primary {
+      color: $assistant-color-primary !important;
+   }
+
+   .assistant-ta-font-color-secondary {
+      color: $assistant-color-secondary !important;
+   }
+
+   .assistant-ta-font-color-third {
+      color: $assistant-color-third !important;
+   }
+
+   .assistant-ta-font-color-alert {
+      color: $assistant-color-alert !important;
+   }
+
+   .assistant-ta-font-color-confirm {
+      color: $assistant-color-confirm !important;
+   }
+
+   .assistant-ta-font-color-other {
+      color: $assistant-color-other !important;
+   }
+
+   .assistant-ta-font-color-text1 {
+      color: $assistant-color-text1 !important;
+   }
+
+   .assistant-ta-font-color-text2 {
+      color: $assistant-color-text2 !important;
+   }
+
+   .assistant-ta-font-color-text3 {
+      color: $assistant-color-text3 !important;
+   }
+
+   .assistant-ta-font-color-text4 {
+      color: $assistant-color-text4 !important;
+   }
+
+   .assistant-ta-fontSize-xxs {
+      font-size: $assistant-xxs-font-size !important;
+   }
+
+   .assistant-ta-fontSize-xs {
+      font-size: $assistant-xs-font-size !important;
+   }
+
+   .assistant-ta-fontSize-s {
+      font-size: $assistant-s-font-size !important;
+   }
+
+   .assistant-ta-fontSize-m {
+      font-size: $assistant-m-font-size !important;
+   }
+
+   .assistant-ta-fontSize-l {
+      font-size: $assistant-l-font-size !important;
+   }
+
+   .assistant-ta-fontSize-xl {
+      font-size: $assistant-xl-font-size !important;
+   }
+
+   .assistant-ta-fontSize-xxl {
+      font-size: $assistant-xxl-font-size !important;
+   }
+}

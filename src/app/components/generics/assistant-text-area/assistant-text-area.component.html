@@ -1,0 +1,9 @@
+<div class="assistant-text-area">
+   <textarea
+      *ngIf="control"
+      class="assistant-ta assistant-ta-size-{{ size }} assistant-ta-font-color-{{ fontColor }} assistant-ta-fontSize-{{ fontSize }}"
+      [formControl]="control"
+      pInputTextarea
+      [autoResize]="true"
+   ></textarea>
+</div>

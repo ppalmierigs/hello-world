@@ -1,0 +1,117 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-checkbox {
+   display: flex;
+
+   @mixin getRadius {
+      border-radius: $assistant-s-radius !important;
+   }
+
+   .assistant-cb-label-left {
+      display: flex;
+      flex-direction: row-reverse !important;
+   }
+
+   .assistant-cb-primary {
+      .p-checkbox-box {
+         @include getRadius();
+         border: 2px solid $assistant-color-primary !important;
+      }
+
+      .p-highlight {
+         background: $assistant-color-primary !important;
+      }
+   }
+
+   .assistant-cb-secondary {
+      .p-checkbox-box {
+         @include getRadius();
+         border: 2px solid $assistant-color-secondary !important;
+      }
+
+      .p-highlight {
+         background: $assistant-color-secondary !important;
+      }
+   }
+
+   .assistant-cb-third {
+      .p-checkbox-box {
+         @include getRadius();
+         border: 2px solid $assistant-color-third !important;
+      }
+
+      .p-highlight {
+         background: $assistant-color-third !important;
+      }
+   }
+
+   .assistant-cb-alert {
+      .p-checkbox-box {
+         @include getRadius();
+         border: 2px solid $assistant-color-alert !important;
+      }
+
+      .p-highlight {
+         background: $assistant-color-alert !important;
+      }
+   }
+
+   .assistant-cb-confirm {
+      .p-checkbox-box {
+         @include getRadius();
+         border: 2px solid $assistant-color-confirm !important;
+      }
+
+      .p-highlight {
+         background: $assistant-color-confirm !important;
+      }
+   }
+
+   .assistant-cb-other {
+      .p-checkbox-box {
+         @include getRadius();
+         border: 2px solid $assistant-color-other !important;
+      }
+
+      .p-highlight {
+         background: $assistant-color-other !important;
+      }
+   }
+
+   .assistant-cb-size-xxs {
+      .p-checkbox-box {
+         padding: $assistant-xxs-padding !important;
+      }
+   }
+   .assistant-cb-size-xs {
+      .p-checkbox-box {
+         padding: $assistant-xs-padding !important;
+      }
+   }
+   .assistant-cb-size-s {
+      .p-checkbox-box {
+         padding: $assistant-s-padding !important;
+      }
+   }
+   .assistant-cb-size-m {
+      .p-checkbox-box {
+         padding: $assistant-m-padding !important;
+      }
+   }
+   .assistant-cb-size-l {
+      .p-checkbox-box {
+         padding: $assistant-l-padding !important;
+      }
+   }
+   .assistant-cb-size-xl {
+      .p-checkbox-box {
+         padding: $assistant-xl-padding !important;
+      }
+   }
+   .assistant-cb-size-xxl {
+      .p-checkbox-box {
+         padding: $assistant-xxl-padding !important;
+      }
+   }
+}

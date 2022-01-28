@@ -1,0 +1,25 @@
+<div class="assistant-column-layout" style="border: 1px solid red">
+   <table cellspacing="0" cellpadding="0" class="assistant-cl-table">
+      <tr>
+         <td
+            id="{{ leftId }}"
+            style="border: 1px solid green"
+            class="assistant-cl-column assistant-cl-{{ padding }}-padding"
+            [ngClass]="{
+               'col-2': leftSize == 'xxs',
+               'col-3': leftSize == 'xs',
+               'col-4': leftSize == 's',
+               'col-6': leftSize == 'm',
+               'col-8': leftSize == 'l',
+               'col-9': leftSize == 'xl',
+               'col-10': leftSize == 'xxl'
+            }"
+         >
+            <ng-content select="[slot=assistant-left-column]"></ng-content>
+         </td>
+         <td id="{{ rightId }}" style="border: 1px solid blue" class="assistant-cl-column assistant-cl-{{ padding }}-padding">
+            <ng-content select="[slot=assistant-right-column]"></ng-content>
+         </td>
+      </tr>
+   </table>
+</div>

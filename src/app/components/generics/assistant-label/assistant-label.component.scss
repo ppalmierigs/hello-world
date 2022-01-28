@@ -1,0 +1,90 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-label {
+   .assistant-l {
+      white-space: nowrap;
+   }
+
+   .assistant-l-ellipsis {
+      display: inline-block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+   }
+
+   .assistant-l-bold {
+      font-weight: bold;
+   }
+
+   .assistant-l-uppercase {
+      text-transform: uppercase;
+   }
+
+   .assistant-l-xxs {
+      font-size: $assistant-xxs-font-size;
+   }
+
+   .assistant-l-xs {
+      font-size: $assistant-xs-font-size;
+   }
+
+   .assistant-l-s {
+      font-size: $assistant-s-font-size;
+   }
+
+   .assistant-l-m {
+      font-size: $assistant-m-font-size;
+   }
+
+   .assistant-l-l {
+      font-size: $assistant-l-font-size;
+   }
+
+   .assistant-l-xl {
+      font-size: $assistant-xl-font-size;
+   }
+
+   .assistant-l-xxl {
+      font-size: $assistant-xxl-font-size;
+   }
+
+   .assistant-l-primary {
+      color: $assistant-color-primary;
+   }
+
+   .assistant-l-secondary {
+      color: $assistant-color-secondary;
+   }
+
+   .assistant-l-third {
+      color: $assistant-color-third;
+   }
+
+   .assistant-l-alert {
+      color: $assistant-color-alert;
+   }
+
+   .assistant-l-confirm {
+      color: $assistant-color-confirm;
+   }
+
+   .assistant-l-other {
+      color: $assistant-color-other;
+   }
+
+   .assistant-l-text1 {
+      color: $assistant-color-text1;
+   }
+
+   .assistant-l-text2 {
+      color: $assistant-color-text2;
+   }
+
+   .assistant-l-text3 {
+      color: $assistant-color-text3;
+   }
+
+   .assistant-l-text4 {
+      color: $assistant-color-text4;
+   }
+}

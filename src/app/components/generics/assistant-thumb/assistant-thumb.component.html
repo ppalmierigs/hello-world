@@ -1,0 +1,8 @@
+<div class="assistant-thumb">
+   <img
+      class="assistant-t-{{ size }} assistant-t-{{ radius }}-radius assistant-t-border-{{ type }}"
+      [ngClass]="{ 'assistant-t-border-none': border == false }"
+      src="{{ url }}"
+      (click)="click.emit()"
+   />
+</div>

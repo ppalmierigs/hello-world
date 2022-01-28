@@ -1,0 +1,34 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-main-layout {
+   .assistant-ml-main-table,
+   .assistant-ml-right-table {
+      width: 100%;
+      height: 100vh;
+      border: none;
+
+      .assistant-ml-sidebar,
+      .assistant-ml-navbar,
+      .assistant-ml-content {
+         vertical-align: top;
+      }
+
+      .assistant-ml-sidebar {
+         min-width: $assistant-sidebar-width;
+         width: $assistant-sidebar-width;
+         max-width: $assistant-sidebar-width;
+      }
+
+      .assistant-ml-navbar {
+         min-height: $assistant-navbar-height;
+         height: $assistant-navbar-height;
+         max-height: $assistant-navbar-height;
+      }
+
+      .assistant-ml-content {
+         min-height: 100%;
+         height: 100%;
+      }
+   }
+}

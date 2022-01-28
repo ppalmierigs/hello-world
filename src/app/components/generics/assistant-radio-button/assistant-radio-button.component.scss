@@ -1,0 +1,23 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-radio-button {
+   //label on left
+   .assistant-rb-label-left {
+      display: flex;
+      flex-direction: row-reverse;
+   }
+
+   //radiobutton custom icon code
+   .p-radiobutton-box.p-highlight .p-radiobutton-icon::before {
+      content: '\e909' !important; // Primeicon code;
+      font-size: 11px;
+      vertical-align: middle;
+   }
+
+   //radiobutton icon global setting
+   .p-radiobutton-icon {
+      transition-duration: unset !important;
+      color: $assistant-color-text4;
+   }
+}

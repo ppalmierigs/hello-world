@@ -1,0 +1,74 @@
+<div class="assistant-dialog">
+   <p-dialog
+      styleClass="assistant-d-{{ size }}"
+      [(visible)]="show"
+      [modal]="true"
+      closeIcon="pi pi-circle-fill"
+      [closable]="closable"
+      [draggable]="false"
+      [resizable]="false"
+      [dismissableMask]="true"
+      (onHide)="close.emit()"
+   >
+      <ng-template pTemplate="header">
+         <div>
+            <!-- title -->
+            <app-assistant-label *ngIf="title !== ''" size="{{ titleSize }}" type="{{ type }}" label="{{ title }}"></app-assistant-label>
+
+            <app-assistant-spacer size="s"></app-assistant-spacer>
+
+            <!-- titleParam -->
+            <app-assistant-label
+               *ngIf="titleParam !== ''"
+               size="{{ titleSize }}"
+               type="{{ type }}"
+               [uppercase]="true"
+               [bold]="true"
+               label="{{ titleParam }}"
+            ></app-assistant-label>
+
+            <app-assistant-spacer size="s"></app-assistant-spacer>
+
+            <!-- description -->
+            <app-assistant-label *ngIf="description !== ''" size="{{ titleSize }}" type="{{ type }}" label="{{ description }}"></app-assistant-label>
+         </div>
+      </ng-template>
+
+      <!-- content -->
+      <ng-template pTemplate="content">
+         <!-- image content -->
+         <div *ngIf="drawUrl; else standardContent" style="height: 58vh; text-align: center">
+            <app-assistant-image size="xxl" url="{{ drawUrl }}"></app-assistant-image>
+         </div>
+
+         <!-- standard content -->
+         <ng-template #standardContent>
+            <ng-content></ng-content>
+         </ng-template>
+      </ng-template>
+
+      <ng-template pTemplate="footer">
+         <div style="display: inline-flex">
+            <!-- button  1-->
+            <app-assistant-button
+               *ngIf="labelBtn1 !== ''"
+               size="m"
+               type="{{ typeBtn1 }}"
+               label="{{ labelBtn1 }}"
+               labelSize="m"
+               (click)="clickBtn1.emit()"
+            ></app-assistant-button>
+
+            <!-- button  0-->
+            <app-assistant-button
+               *ngIf="labelBtn0 !== ''"
+               size="m"
+               type="{{ typeBtn0 }}"
+               label="{{ labelBtn0 }}"
+               labelSize="m"
+               (click)="clickBtn0.emit()"
+            ></app-assistant-button>
+         </div>
+      </ng-template>
+   </p-dialog>
+</div>

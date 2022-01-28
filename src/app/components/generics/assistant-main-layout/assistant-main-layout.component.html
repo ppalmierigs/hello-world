@@ -1,0 +1,23 @@
+<div class="assistant-main-layout">
+   <table cellspacing="0" cellpadding="0" class="assistant-ml-main-table">
+      <tr>
+         <td class="assistant-ml-sidebar">
+            <app-sidebar></app-sidebar>
+         </td>
+         <td>
+            <table cellspacing="0" cellpadding="0" class="assistant-ml-right-table">
+               <!--<tr>
+                  <td class="assistant-ml-navbar">
+                     <app-navabar [titleParam]="titleParam"></app-navabar>
+                  </td>
+               </tr>-->
+               <tr>
+                  <td class="assistant-ml-content">
+                     <ng-content></ng-content>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+</div>

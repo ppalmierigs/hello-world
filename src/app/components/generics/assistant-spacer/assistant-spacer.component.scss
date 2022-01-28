@@ -1,0 +1,51 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-spacer {
+   @mixin common($margin) {
+      min-width: $margin;
+      min-height: $margin;
+      width: $margin;
+      height: $margin;
+      max-width: $margin;
+      max-height: $margin;
+   }
+
+   .assistant-s-xxs,
+   .assistant-s-xs,
+   .assistant-s-s,
+   .assistant-s-m,
+   .assistant-s-l,
+   .assistant-s-xl,
+   .assistant-s-xxl {
+      display: inline-flex;
+   }
+
+   .assistant-s-xxs {
+      @include common($assistant-xxs-margin);
+   }
+
+   .assistant-s-xs {
+      @include common($assistant-xs-margin);
+   }
+
+   .assistant-s-s {
+      @include common($assistant-s-margin);
+   }
+
+   .assistant-s-m {
+      @include common($assistant-m-margin);
+   }
+
+   .assistant-s-l {
+      @include common($assistant-l-margin);
+   }
+
+   .assistant-s-xl {
+      @include common($assistant-xl-margin);
+   }
+
+   .assistant-s-xxl {
+      @include common($assistant-xxl-margin);
+   }
+}

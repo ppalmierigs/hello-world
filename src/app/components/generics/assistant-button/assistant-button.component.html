@@ -1,0 +1,14 @@
+<div class="assistant-button">
+   <button
+      pButton
+      type="button"
+      [loading]="loading"
+      label="{{ label }}"
+      [disabled]="disabled"
+      (click)="click.emit(); $event.stopPropagation()"
+      loadingIcon="pi-spinner pi-spin"
+      class="assistant-b-{{ type }}-btn assistant-b-{{ size }}-btn assistant-b-{{ labelSize }}-label"
+      [ngClass]="{ 'assistant-b-conceal': conceal == true, 'assistant-b-bold': bold == true, 'assistant-b-uppercase': uppercase == true }"
+      [ngStyle]="{ 'min-width': minWidth != '' ? minWidth : 'inherits' }"
+   ></button>
+</div>

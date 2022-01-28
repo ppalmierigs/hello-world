@@ -1,0 +1,90 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-title {
+   .assistant-t {
+      white-space: nowrap;
+   }
+
+   .assistant-t-bold {
+      font-weight: bold;
+   }
+
+   .assistant-t-uppercase {
+      text-transform: uppercase;
+   }
+
+   .assistant-t-xxs {
+      font-size: $assistant-xxs-title-size;
+   }
+
+   .assistant-t-xs {
+      font-size: $assistant-xs-title-size;
+   }
+
+   .assistant-t-s {
+      font-size: $assistant-s-title-size;
+   }
+
+   .assistant-t-m {
+      font-size: $assistant-m-title-size;
+   }
+
+   .assistant-t-l {
+      font-size: $assistant-l-title-size;
+   }
+
+   .assistant-t-xl {
+      font-size: $assistant-xl-title-size;
+   }
+
+   .assistant-t-primary {
+      color: $assistant-color-primary;
+   }
+
+   .assistant-t-secondary {
+      color: $assistant-color-secondary;
+   }
+
+   .assistant-t-third {
+      color: $assistant-color-third;
+   }
+
+   .assistant-t-alert {
+      color: $assistant-color-alert;
+   }
+
+   .assistant-t-confirm {
+      color: $assistant-color-confirm;
+   }
+
+   .assistant-t-other {
+      color: $assistant-color-other;
+   }
+
+   .assistant-t-text1 {
+      color: $assistant-color-text1;
+   }
+
+   .assistant-t-text2 {
+      color: $assistant-color-text2;
+   }
+
+   .assistant-t-text3 {
+      color: $assistant-color-text3;
+   }
+
+   .assistant-t-text4 {
+      color: $assistant-color-text4;
+   }
+
+   .assistant-t-wrap {
+      width: 5px;
+      display: inline-table;
+      white-space: inherit; /* css-3 */
+      white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+      white-space: -pre-wrap; /* Opera 4-6 */
+      white-space: -o-pre-wrap; /* Opera 7 */
+      word-wrap: break-word; /* Internet Explorer 5.5+ */
+   }
+}

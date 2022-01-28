@@ -1,0 +1,61 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-image {
+   height: 100%;
+   .assistant-i-xxs {
+      height: 20%;
+   }
+
+   .assistant-i-xs {
+      height: 30%;
+   }
+
+   .assistant-i-s {
+      height: 40%;
+   }
+
+   .assistant-i-m {
+      height: 50%;
+   }
+
+   .assistant-i-l {
+      height: 60%;
+   }
+
+   .assistant-i-xl {
+      height: 70%;
+   }
+
+   .assistant-i-xxl {
+      height: 100%;
+   }
+
+   .assistant-i-border-none {
+      border: none !important;
+   }
+
+   .assistant-i-border-primary {
+      border: 2px solid $assistant-color-primary;
+   }
+
+   .assistant-i-border-secondary {
+      border: 2px solid $assistant-color-secondary;
+   }
+
+   .assistant-i-border-third {
+      border: 2px solid $assistant-color-third;
+   }
+
+   .assistant-i-border-alert {
+      border: 2px solid $assistant-color-alert;
+   }
+
+   .assistant-i-border-confirm {
+      border: 2px solid $assistant-color-confirm;
+   }
+
+   .assistant-i-border-other {
+      border: 2px solid $assistant-color-other;
+   }
+}

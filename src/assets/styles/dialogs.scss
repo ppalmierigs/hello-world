@@ -1,0 +1,49 @@
+@import 'colors.scss';
+@import 'sizes.scss';
+:host ::ng-deep {
+   .assistant-dialog-small {
+      width: 40vw;
+   }
+
+   .assistant-dialog-medium {
+      width: 65vw;
+   }
+
+   .assistant-dialog-large {
+      width: 90vw;
+   }
+
+   .p-dialog-header {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+   }
+
+   .assistant-dialog-header {
+      .assistant-dialog-title {
+         margin-right: 10px;
+         text-transform: uppercase;
+         color: $assistant-color-black;
+         font-size: $assistant-text-size-medium;
+      }
+      .assistant-dialog-title-argument {
+         margin-right: 10px;
+         color: $assistant-color-black;
+         font-size: $assistant-text-size-large;
+         text-transform: uppercase;
+         font-weight: bolder;
+      }
+
+      .assistant-dialog-subtitle {
+         color: $assistant-color-primary;
+         font-size: $assistant-text-size;
+         font-weight: bolder;
+         text-transform: uppercase;
+      }
+   }
+
+   .p-dialog-footer {
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      padding-top: 24px;
+   }
+}

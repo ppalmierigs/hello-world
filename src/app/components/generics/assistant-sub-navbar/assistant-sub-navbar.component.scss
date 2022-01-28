@@ -1,0 +1,61 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-sub-navbar {
+   @function sum($type, $padding) {
+      @if ($type == '-webkit-calc') {
+         @return -webkit-calc(#{$assistant-sub-navbar-height} + #{$padding});
+      }
+      @if ($type == '-moz-calc') {
+         @return -moz-calc(#{$assistant-sub-navbar-height} + #{$padding});
+      }
+      @if ($type == 'calc') {
+         @return calc(#{$assistant-sub-navbar-height} + #{$padding});
+      }
+   }
+
+   @mixin common($padding) {
+      min-height: sum('-webkit-calc', $padding);
+      min-height: sum('-moz-calc', $padding);
+      min-height: sum('calc', $padding);
+      padding: $padding;
+   }
+
+   overflow-x: hidden;
+   background-color: $assistant-color-bg1;
+   min-height: $assistant-sub-navbar-height;
+   width: -webkit-calc(100vw - #{$assistant-sidebar-width});
+   width: -moz-calc(100vw - #{$assistant-sidebar-width});
+   width: calc(100vw - #{$assistant-sidebar-width});
+   max-width: -webkit-calc(100vw - #{$assistant-sidebar-width});
+   max-width: -moz-calc(100vw - #{$assistant-sidebar-width});
+   max-width: calc(100vw - #{$assistant-sidebar-width});
+
+   .assistant-sn-xxs-padding {
+      @include common($assistant-xxs-padding);
+   }
+
+   .assistant-sn-xs-padding {
+      @include common($assistant-xs-padding);
+   }
+
+   .assistant-sn-s-padding {
+      @include common($assistant-s-padding);
+   }
+
+   .assistant-sn-m-padding {
+      @include common($assistant-m-padding);
+   }
+
+   .assistant-sn-l-padding {
+      @include common($assistant-l-padding);
+   }
+
+   .assistant-sn-xl-padding {
+      @include common($assistant-xl-padding);
+   }
+
+   .assistant-sn-xxl-padding {
+      @include common($assistant-xxl-padding);
+   }
+}

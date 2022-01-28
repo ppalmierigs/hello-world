@@ -1,0 +1,7 @@
+<div class="assistant-radio-button">
+   <div [ngClass]="{ 'assistant-rb-label-left': labelSide === 'left' }">
+      <p-radioButton name="{{ groupName }}" value="{{ key }}" [formControl]="control" styleClass="assistant-rb-{{ type }}"> </p-radioButton>
+      <app-assistant-spacer size="s"></app-assistant-spacer>
+      <app-assistant-label size="{{ size }}" label="{{ label }}" type="{{ fontColor }}" [uppercase]="uppercase" [bold]="bold"> </app-assistant-label>
+   </div>
+</div>

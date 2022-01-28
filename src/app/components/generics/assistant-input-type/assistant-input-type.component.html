@@ -1,0 +1,14 @@
+<div class="assistant-input-type">
+   <label class="assistant-it-{{ labelSize }}-label">{{ label }}</label>
+   <span class="p-input-icon-right">
+      <input
+         pInputText
+         type="{{ kind }}"
+         required="{{ required }}"
+         [formControl]="control"
+         placeholder="{{ placeholder }}"
+         autocomplete="{{ autocomplete }}"
+         class="assistant-it-{{ inputSize }}-input assistant-it-{{ radius }}-radius"
+      />
+   </span>
+</div>

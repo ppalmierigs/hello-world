@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/sizes.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-complete-card {
+   .assistant-cc-xxs-padding {
+      padding: $assistant-xxs-padding;
+   }
+
+   .assistant-cc-xs-padding {
+      padding: $assistant-xs-padding;
+   }
+
+   .assistant-cc-s-padding {
+      padding: $assistant-s-padding;
+   }
+
+   .assistant-cc-m-padding {
+      padding: $assistant-m-padding;
+   }
+
+   .assistant-cc-l-padding {
+      padding: $assistant-l-padding;
+   }
+
+   .assistant-cc-xl-padding {
+      padding: $assistant-xl-padding;
+   }
+
+   .assistant-cc-xxl-padding {
+      padding: $assistant-xxl-padding;
+   }
+}

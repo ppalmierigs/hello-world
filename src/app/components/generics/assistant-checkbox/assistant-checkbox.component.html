@@ -1,0 +1,7 @@
+<div class="assistant-checkbox">
+   <div [ngClass]="{ 'assistant-cb-label-left': labelSide === 'left' }">
+      <p-checkbox value="{{ key }}" styleClass="assistant-cb-{{ type }} assistant-cb-size-{{ size }}" [formControl]="control"></p-checkbox>
+      <app-assistant-spacer size="m"></app-assistant-spacer>
+      <app-assistant-label size="{{ size }}" label="{{ label }}" type="{{ fontColor }}" [uppercase]="uppercase" [bold]="bold"></app-assistant-label>
+   </div>
+</div>

@@ -1,0 +1,68 @@
+@import '../../../../assets/styles/sizes.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-button {
+   .assistant-b-xxs-btn {
+      height: -webkit-calc(2 * #{$assistant-xxs-padding} + 12px);
+      height: -moz-calc(2 * #{$assistant-xxs-padding} + 12px);
+      height: calc(2 * #{$assistant-xxs-padding} + 12px);
+      padding: $assistant-xxs-padding;
+      border-radius: $assistant-xxs-radius;
+   }
+
+   .assistant-b-xs-btn {
+      height: -webkit-calc(2 * #{$assistant-xs-padding} + 15px);
+      height: -moz-calc(2 * #{$assistant-xs-padding} + 15px);
+      height: calc(2 * #{$assistant-xs-padding} + 15px);
+      padding: $assistant-xs-padding;
+      font-size: $assistant-xs-font-size;
+      border-radius: $assistant-xs-radius;
+   }
+
+   .assistant-b-s-btn {
+      height: -webkit-calc(2 * #{$assistant-s-padding} + 18px);
+      height: -moz-calc(2 * #{$assistant-s-padding} + 18px);
+      height: calc(2 * #{$assistant-s-padding} + 18px);
+      padding: $assistant-s-padding;
+      font-size: $assistant-s-font-size;
+      border-radius: $assistant-s-radius;
+   }
+
+   .assistant-b-m-btn {
+      height: -webkit-calc(2 * #{$assistant-m-padding} + 20px);
+      height: -moz-calc(2 * #{$assistant-m-padding} + 20px);
+      height: calc(2 * #{$assistant-m-padding} + 20px);
+      padding: $assistant-m-padding;
+      font-size: $assistant-m-font-size;
+      border-radius: $assistant-m-radius;
+   }
+
+   .assistant-b-l-btn {
+      height: -webkit-calc(2 * #{$assistant-l-padding} + 20px);
+      height: -moz-calc(2 * #{$assistant-l-padding} + 20px);
+      height: calc(2 * #{$assistant-l-padding} + 20px);
+      padding: $assistant-l-padding;
+      font-size: $assistant-l-font-size;
+      border-radius: $assistant-l-radius;
+   }
+   .assistant-b-xl-btn {
+      height: -webkit-calc(2 * #{$assistant-xl-padding} + 20px);
+      height: -moz-calc(2 * #{$assistant-xl-padding} + 20px);
+      height: calc(2 * #{$assistant-xl-padding} + 20px);
+      padding: $assistant-xl-padding;
+      font-size: $assistant-xl-font-size;
+      border-radius: $assistant-xl-radius;
+   }
+
+   .assistant-b-xxl-btn {
+      height: -webkit-calc(2 * #{$assistant-xxl-padding} + 20px);
+      height: -moz-calc(2 * #{$assistant-xxl-padding} + 20px);
+      height: calc(2 * #{$assistant-xxl-padding} + 20px);
+      padding: $assistant-xxl-padding;
+      font-size: $assistant-xxl-font-size;
+      border-radius: $assistant-l-radius; // it's correct 'l' radius;
+   }
+}

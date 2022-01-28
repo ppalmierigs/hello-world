@@ -1,0 +1,97 @@
+@import '../../../../assets/styles/colors.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-box-container {
+   .assistant-bc-primary-box {
+      background-color: $assistant-color-primary;
+      border-color: $assistant-color-primary;
+      color: white;
+   }
+
+   .assistant-bc-primary2-box {
+      background-color: white;
+      border: 2px solid $assistant-color-primary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-secondary-box {
+      background-color: $assistant-color-secondary;
+      border-color: $assistant-color-secondary;
+      color: $assistant-color-text1 !important;
+   }
+
+   .assistant-bc-secondary2-box {
+      background-color: white;
+      border: 2px solid $assistant-color-secondary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-third-box {
+      background-color: $assistant-color-third;
+      border-color: $assistant-color-third;
+      color: white;
+   }
+
+   .assistant-bc-third2-box {
+      background-color: white;
+      border: 2px solid $assistant-color-third;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-alert-box {
+      background-color: $assistant-color-alert;
+      border-color: $assistant-color-alert;
+      color: white;
+   }
+
+   .assistant-bc-alert2-box {
+      background-color: white;
+      border: 2px solid $assistant-color-alert;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-confirm-box {
+      background-color: $assistant-color-confirm;
+      border-color: $assistant-color-confirm;
+      color: white;
+   }
+
+   .assistant-bc-confirm2-box {
+      background-color: white;
+      border: 2px solid $assistant-color-confirm;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-other-box {
+      background-color: $assistant-color-other;
+      border-color: $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-other2-box {
+      background-color: white;
+      border: 2px solid $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-bg1-box {
+      background-color: $assistant-color-bg1;
+      border-color: $assistant-color-bg1;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-bg2-box {
+      background-color: $assistant-color-bg2;
+      border-color: $assistant-color-bg2;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-bc-bg3-box {
+      background-color: $assistant-color-bg3;
+      border-color: $assistant-color-bg3;
+      color: $assistant-color-text1;
+   }
+}

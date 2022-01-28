@@ -1,0 +1,23 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-accordion {
+   .assistant-a {
+      .p-highlight {
+         display: none;
+      }
+
+      .p-accordion,
+      p-accordiontab:last-child,
+      .p-accordion-content {
+         background: none !important;
+         border: none !important;
+         padding: 0 !important;
+         height: auto !important;
+      }
+
+      .p-toggleable-content {
+         height: auto !important;
+      }
+   }
+}

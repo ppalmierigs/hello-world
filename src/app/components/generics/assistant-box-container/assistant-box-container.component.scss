@@ -1,0 +1,104 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-box-container {
+   height: 100%;
+   min-height: 100%;
+
+   .assistant-bc {
+      height: 100%;
+      min-height: 100%;
+   }
+
+   .assistant-bc-primary-font {
+      color: $assistant-color-primary;
+   }
+
+   .assistant-bc-secondary-font {
+      color: $assistant-color-secondary;
+   }
+
+   .assistant-bc-third-font {
+      color: $assistant-color-third;
+   }
+
+   .assistant-bc-alert-font {
+      color: $assistant-color-alert;
+   }
+
+   .assistant-bc-confirm-font {
+      color: $assistant-color-confirm;
+   }
+
+   .assistant-bc-other-font {
+      color: $assistant-color-other;
+   }
+
+   .assistant-bc-xxs-size {
+      font-size: $assistant-xxs-font-size;
+   }
+
+   .assistant-bc-xs-size {
+      font-size: $assistant-xs-font-size;
+   }
+
+   .assistant-bc-s-size {
+      font-size: $assistant-s-font-size;
+   }
+
+   .assistant-bc-m-size {
+      font-size: $assistant-m-font-size;
+   }
+
+   .assistant-bc-l-size {
+      font-size: $assistant-l-font-size;
+   }
+
+   .assistant-bc-xl-size {
+      font-size: $assistant-xl-font-size;
+   }
+
+   .assistant-bc-xxs-radius {
+      border-radius: $assistant-xxs-radius;
+   }
+
+   .assistant-bc-xs-radius {
+      border-radius: $assistant-xs-radius;
+   }
+
+   .assistant-bc-s-radius {
+      border-radius: $assistant-s-radius;
+   }
+
+   .assistant-bc-m-radius {
+      border-radius: $assistant-m-radius;
+   }
+
+   .assistant-bc-l-radius {
+      border-radius: $assistant-l-radius;
+   }
+
+   .assistant-bc-xl-radius {
+      border-radius: $assistant-xl-radius;
+   }
+
+   .assistant-bc-align-left {
+      text-align: left;
+   }
+
+   .assistant-bc-align-center {
+      text-align: center;
+   }
+
+   .assistant-bc-align-right {
+      text-align: right;
+   }
+
+   .assistant-t-clickable {
+      cursor: pointer;
+   }
+
+   .assistant-t-disabled {
+      opacity: 0.2;
+   }
+}

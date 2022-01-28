@@ -1,0 +1,99 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-complete-card {
+   $assistantCcHFHeight: 48px;
+
+   .assistant-cc-card {
+      overflow: auto;
+      box-shadow: none;
+      border-radius: $assistant-m-radius;
+      display: inline-table;
+   }
+
+   .assistant-cc-card-max-width {
+      .assistant-cc-card {
+         width: 100%;
+      }
+   }
+
+   .assistant-cc-card-min-width {
+      .assistant-cc-card {
+         width: auto;
+      }
+   }
+
+   .assistant-cc-header,
+   .assistant-cc-footer {
+      color: $assistant-color-text4;
+      min-height: $assistantCcHFHeight;
+   }
+
+   .assistant-cc-header {
+      padding: 13px;
+      text-align: left;
+      height: $assistantCcHFHeight;
+      border-top-left-radius: $assistant-m-radius;
+      border-top-right-radius: $assistant-m-radius;
+   }
+
+   .assistant-cc-minimized-header {
+      border-bottom-left-radius: $assistant-m-radius;
+      border-bottom-right-radius: $assistant-m-radius;
+   }
+
+   .assistant-cc-footer {
+      padding: 8px 13px;
+      border-bottom-left-radius: $assistant-m-radius;
+      border-bottom-right-radius: $assistant-m-radius;
+   }
+
+   .assistant-cc-footer:is(:empty) {
+      display: none;
+   }
+
+   .assistant-cc-body {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: auto;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .assistant-cc-no-side-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+   }
+
+   .assistant-cc-no-v-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+   }
+
+   .p-card .p-card-body,
+   .p-card .p-card-content {
+      padding: 0px;
+   }
+
+   .assistant-header-icon {
+      float: right;
+      margin-top: 4px;
+      cursor: pointer;
+   }
+
+   .assistant-minimize-icon {
+      color: $assistant-color-warning;
+   }
+
+   .assistant-maximize-icon {
+      color: $assistant-color-success;
+   }
+
+   .assistant-cc-no-data {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+   }
+}

@@ -1,0 +1,9 @@
+<div class="assistant-accordion">
+   <p-accordion styleClass="assistant-a" [ngStyle]="{ display: show ? 'contents' : 'none' }">
+      <p-accordionTab [selected]="show">
+         <ng-template pTemplate="content">
+            <ng-content></ng-content>
+         </ng-template>
+      </p-accordionTab>
+   </p-accordion>
+</div>

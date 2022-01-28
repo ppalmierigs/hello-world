@@ -1,0 +1,72 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-title-description {
+   .assistant-td-xxs-tlt,
+   .assistant-td-xs-tlt,
+   .assistant-td-s-tlt,
+   .assistant-td-m-tlt,
+   .assistant-td-l-tlt,
+   .assistant-td-xl-tlt {
+      margin: 0px;
+      color: $assistant-color-text1;
+   }
+   .assistant-td-xxs-tlt {
+      font-weight: $assistant-xxs-weigth;
+      font-size: $assistant-xxs-font-size;
+   }
+   .assistant-td-xs-tlt {
+      font-weight: $assistant-xs-weigth;
+      font-size: $assistant-xs-font-size;
+   }
+   .assistant-td-s-tlt {
+      font-weight: $assistant-s-weigth;
+      font-size: $assistant-s-font-size;
+   }
+   .assistant-td-m-tlt {
+      font-weight: $assistant-m-weigth;
+      font-size: $assistant-m-font-size;
+   }
+   .assistant-td-l-tlt {
+      font-weight: $assistant-l-weigth;
+      font-size: $assistant-l-font-size;
+   }
+   .assistant-td-xl-tlt {
+      font-weight: $assistant-xl-weigth;
+      font-size: $assistant-xl-font-size;
+   }
+
+   .assistant-td-xxs-dsc,
+   .assistant-td-xs-dsc,
+   .assistant-td-s-dsc,
+   .assistant-td-m-dsc,
+   .assistant-td-l-dsc,
+   .assistant-td-xl-dsc {
+      margin: 0px;
+      color: $assistant-color-text2;
+   }
+   .assistant-td-xxs-dsc {
+      font-weight: $assistant-xs-weigth;
+      font-size: $assistant-xs-font-size;
+   }
+   .assistant-td-xs-dsc {
+      font-weight: $assistant-xs-weigth;
+      font-size: $assistant-xs-font-size;
+   }
+   .assistant-td-s-dsc {
+      font-weight: $assistant-s-weigth;
+      font-size: $assistant-s-font-size;
+   }
+   .assistant-td-m-dsc {
+      font-weight: $assistant-m-weigth;
+      font-size: $assistant-m-font-size;
+   }
+   .assistant-td-l-dsc {
+      font-weight: $assistant-l-weigth;
+      font-size: $assistant-l-font-size;
+   }
+   .assistant-td-xl-dsc {
+      font-weight: $assistant-xl-weigth;
+      font-size: $assistant-xl-font-size;
+   }
+}

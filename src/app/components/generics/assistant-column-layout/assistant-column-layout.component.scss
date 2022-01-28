@@ -1,0 +1,100 @@
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-column-layout {
+   $assistantClPaddingCoefficient: 2;
+
+   @function multiply($type, $padding) {
+      @if ($type == '-webkit-calc') {
+         @return -webkit-calc(#{$padding} * #{$assistantClPaddingCoefficient});
+      }
+      @if ($type == '-moz-calc') {
+         @return -moz-calc(#{$padding} * #{$assistantClPaddingCoefficient});
+      }
+      @if ($type == 'calc') {
+         @return calc(#{$padding} * #{$assistantClPaddingCoefficient});
+      }
+   }
+
+   @mixin clPadding($padding, $side) {
+      padding: multiply('-webkit-calc', $padding);
+      padding: multiply('-moz-calc', $padding);
+      padding: multiply('calc', $padding);
+
+      @if ($side == 'left') {
+         padding-right: $padding;
+      }
+      @if ($side == 'right') {
+         padding-left: $padding;
+      }
+   }
+
+   .assistant-cl-table {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+   }
+
+   .assistant-cl-column {
+      vertical-align: top;
+   }
+
+   .assistant-cl-no-extra-spaces {
+      margin: 0px !important;
+   }
+
+   .assistant-cl-xxs-padding:first-child {
+      @include clPadding($assistant-xxs-padding, 'left');
+   }
+
+   .assistant-cl-xxs-padding:last-child {
+      @include clPadding($assistant-xxs-padding, 'right');
+   }
+
+   .assistant-cl-xs-padding:first-child {
+      @include clPadding($assistant-xs-padding, 'left');
+   }
+
+   .assistant-cl-xs-padding:last-child {
+      @include clPadding($assistant-xs-padding, 'right');
+   }
+
+   .assistant-cl-s-padding:first-child {
+      @include clPadding($assistant-s-padding, 'left');
+   }
+
+   .assistant-cl-s-padding:last-child {
+      @include clPadding($assistant-s-padding, 'right');
+   }
+
+   .assistant-cl-m-padding:first-child {
+      @include clPadding($assistant-m-padding, 'left');
+   }
+
+   .assistant-cl-m-padding:last-child {
+      @include clPadding($assistant-m-padding, 'right');
+   }
+
+   .assistant-cl-l-padding:first-child {
+      @include clPadding($assistant-l-padding, 'left');
+   }
+
+   .assistant-cl-l-padding:last-child {
+      @include clPadding($assistant-l-padding, 'right');
+   }
+
+   .assistant-cl-xl-padding:first-child {
+      @include clPadding($assistant-xl-padding, 'left');
+   }
+
+   .assistant-cl-xl-padding:last-child {
+      @include clPadding($assistant-xl-padding, 'right');
+   }
+
+   .assistant-cl-xxl-padding:first-child {
+      @include clPadding($assistant-xxl-padding, 'left');
+   }
+
+   .assistant-cl-xxl-padding:last-child {
+      @include clPadding($assistant-xxl-padding, 'right');
+   }
+}

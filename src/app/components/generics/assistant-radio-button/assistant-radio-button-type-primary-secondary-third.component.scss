@@ -1,0 +1,36 @@
+@import '../../../../assets/styles/colors.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-radio-button {
+   @mixin type($color, $lightColor) {
+      .p-radiobutton-box,
+      .p-radiobutton {
+         border-color: $lightColor !important;
+         background: $lightColor !important;
+      }
+
+      .p-highlight {
+         background: $color !important;
+         border-color: $color !important;
+      }
+
+      .p-radiobutton-icon {
+         background: $color !important;
+      }
+   }
+
+   .assistant-rb-primary {
+      @include type($assistant-color-primary, $assistant-color-primary-light);
+   }
+
+   .assistant-rb-secondary {
+      @include type($assistant-color-secondary, $assistant-color-secondary-light);
+   }
+
+   .assistant-rb-third {
+      @include type($assistant-color-third, $assistant-color-third-light);
+   }
+}

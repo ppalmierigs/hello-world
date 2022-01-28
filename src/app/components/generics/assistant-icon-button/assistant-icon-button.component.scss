@@ -1,0 +1,90 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-icon-button {
+   $assistant-ib-increase: 4px;
+
+   @mixin common($radius) {
+      border-radius: -webkit-calc(#{$radius} + #{$assistant-ib-increase});
+      border-radius: -moz-calc(#{$radius} + #{$assistant-ib-increase});
+      border-radius: calc(#{$radius} + #{$assistant-ib-increase});
+      width: -webkit-calc(2 * #{$radius} + #{$assistant-ib-increase});
+      width: -moz-calc(2 * #{$radius} + #{$assistant-ib-increase});
+      width: calc(2 * #{$radius} + #{$assistant-ib-increase});
+      height: -webkit-calc(2 * #{$radius} + #{$assistant-ib-increase});
+      height: -moz-calc(2 * #{$radius} + #{$assistant-ib-increase});
+      height: calc(2 * #{$radius} + #{$assistant-ib-increase});
+   }
+
+   button {
+      padding: 0px;
+   }
+
+   .assistant-ic-xxs-btn {
+      .pi {
+         font-size: $assistant-xxs-font-size;
+      }
+      @include common($assistant-xxs-radius);
+   }
+
+   .assistant-ic-xs-btn {
+      .pi {
+         font-size: $assistant-xs-font-size;
+         margin-top: 1px;
+      }
+      @include common($assistant-xs-radius);
+   }
+
+   .assistant-ic-s-btn {
+      .pi {
+         font-size: $assistant-s-font-size;
+      }
+      @include common($assistant-s-radius);
+   }
+
+   .assistant-ic-m-btn {
+      .pi {
+         font-size: $assistant-m-font-size;
+      }
+      @include common($assistant-m-radius);
+   }
+
+   .assistant-ic-l-btn {
+      .pi {
+         font-size: $assistant-l-font-size;
+         margin-left: 1px;
+      }
+      @include common($assistant-l-radius);
+   }
+
+   .assistant-ic-xl-btn {
+      .pi {
+         font-size: $assistant-xl-font-size;
+         margin-bottom: 1px;
+      }
+      @include common($assistant-xl-radius);
+   }
+
+   .assistant-ic-xxl-btn {
+      .pi {
+         font-size: $assistant-xxl-font-size;
+      }
+      @include common($assistant-xxl-radius);
+   }
+
+   .assistant-ic-0-btn {
+      transform: rotate(0deg);
+   }
+
+   .assistant-ic-90-btn {
+      transform: rotate(90deg);
+   }
+
+   .assistant-ic-180-btn {
+      transform: rotate(180deg);
+   }
+
+   .assistant-ic-270-btn {
+      transform: rotate(270deg);
+   }
+}

@@ -1,0 +1,16 @@
+<div class="assistant-box-container">
+   <div
+      class="assistant-bc assistant-bc-{{ type }}-box assistant-bc-align-{{ contentAlign }} assistant-bc-{{ fontColor }}-font assistant-bc-{{
+         fontSize
+      }}-size assistant-bc-{{ padding }}-padding assistant-bc-{{ radius }}-radius"
+      [ngClass]="{ 'assistant-t-disabled': disabled == true, 'assistant-t-clickable': clickable == true }"
+      (click)="disabled ? null : this.click.emit(); $event.stopPropagation()"
+      [ngStyle]="{
+         display: itemDirection != '' ? 'flex' : 'inherits',
+         'flex-direction': itemDirection != '' ? itemDirection : 'inherits',
+         'justify-content': itemDirection != '' ? 'center' : 'inherits'
+      }"
+   >
+      <ng-content></ng-content>
+   </div>
+</div>

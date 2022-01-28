@@ -1,0 +1,14 @@
+<span class="assistant-label">
+   <span
+      class="assistant-l assistant-l-{{ size }} assistant-l-{{ type }}"
+      [ngClass]="{
+         'assistant-l-uppercase': uppercase == true,
+         'assistant-l-bold': bold == true,
+         'assistant-l-ellipsis': ellipsis == true && maxWidth !== ''
+      }"
+      [ngStyle]="{ 'max-width': maxWidth !== '' ? maxWidth : '' }"
+   >
+      <span *ngIf="i18nLabel">{{ i18nLabel | translate }}</span>
+      <span *ngIf="!i18nLabel && label">{{ label }}</span>
+   </span>
+</span>

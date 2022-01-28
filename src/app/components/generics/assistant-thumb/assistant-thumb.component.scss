@@ -1,0 +1,87 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-thumb {
+   img {
+      cursor: pointer;
+   }
+   .assistant-t-xxs {
+      width: 48px;
+   }
+
+   .assistant-t-xs {
+      width: 80px;
+   }
+
+   .assistant-t-s {
+      width: 96px;
+   }
+
+   .assistant-t-m {
+      width: 112px;
+   }
+
+   .assistant-t-l {
+      width: 128px;
+   }
+
+   .assistant-t-xl {
+      width: 144px;
+   }
+
+   .assistant-t-xxl {
+      width: 160px;
+   }
+
+   .assistant-t-border-none {
+      border: none !important;
+   }
+
+   .assistant-t-border-primary {
+      border: 2px solid $assistant-color-primary;
+   }
+
+   .assistant-t-border-secondary {
+      border: 2px solid $assistant-color-secondary;
+   }
+
+   .assistant-t-border-third {
+      border: 2px solid $assistant-color-third;
+   }
+
+   .assistant-t-border-alert {
+      border: 2px solid $assistant-color-alert;
+   }
+
+   .assistant-t-border-confirm {
+      border: 2px solid $assistant-color-confirm;
+   }
+
+   .assistant-t-border-other {
+      border: 2px solid $assistant-color-other;
+   }
+
+   .assistant-t-xxs-radius {
+      border-radius: $assistant-xxs-radius;
+   }
+
+   .assistant-t-xs-radius {
+      border-radius: $assistant-xs-radius;
+   }
+
+   .assistant-t-s-radius {
+      border-radius: $assistant-s-radius;
+   }
+
+   .assistant-t-m-radius {
+      border-radius: $assistant-m-radius;
+   }
+
+   .assistant-t-l-radius {
+      border-radius: $assistant-l-radius;
+   }
+
+   .assistant-t-xl-radius {
+      border-radius: $assistant-xl-radius;
+   }
+}

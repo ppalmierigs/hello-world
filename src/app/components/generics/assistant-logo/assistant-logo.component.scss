@@ -1,0 +1,32 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-logo {
+   .assistant-l-xxs {
+      width: 64px;
+   }
+
+   .assistant-l-xs {
+      width: 80px;
+   }
+
+   .assistant-l-s {
+      width: 96px;
+   }
+
+   .assistant-l-m {
+      width: 112px;
+   }
+
+   .assistant-l-l {
+      width: 128px;
+   }
+
+   .assistant-l-xl {
+      width: 144px;
+   }
+
+   .assistant-l-xxl {
+      width: 160px;
+   }
+}

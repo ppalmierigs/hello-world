@@ -1,0 +1,40 @@
+<div class="assistant-complete-card" *ngIf="bodyHeight" (window:resize)="bodyHeight = this.dynamicBodyHeight()">
+   <div [ngClass]="{ 'assistant-cc-card-max-width': isMinimized == false, 'assistant-cc-card-min-width': isMinimized == true }">
+      <p-card styleClass="assistant-cc-card">
+         <div class="assistant-cc-header assistant-cc-{{ type }}" [ngClass]="{ 'assistant-cc-minimized-header': isMinimized == true }">
+            <app-assistant-title *ngIf="!isMinimized" size="xxs" [uppercase]="false" [bold]="true" label="{{ title }}"></app-assistant-title>
+            <i *ngIf="canMinimize && !isMinimized" class="pi pi-circle-on assistant-header-icon assistant-minimize-icon" (click)="isMinimized = true"></i>
+            <i
+               *ngIf="canMinimize && isMinimized"
+               class="pi pi-circle-on assistant-header-icon assistant-maximize-icon"
+               (click)="isMinimized = false"
+               title="{{ title }}"
+            ></i>
+         </div>
+
+         <div
+            *ngIf="!isMinimized"
+            class="assistant-cc-body assistant-cc-{{ padding }}-padding"
+            [ngClass]="{ 'assistant-cc-no-side-padding': hideBodySidePadding == true, 'assistant-cc-no-v-padding': hideBodyVPadding == true }"
+            [ngStyle]="{
+               'max-width': maxWidth != '' ? maxWidth : '',
+               'max-height': bodyHeight != '' ? bodyHeight : '100%',
+               height: bodyHeight != '' ? bodyHeight : '100%',
+               'min-height': bodyHeight != '' ? bodyHeight : '100%'
+            }"
+         >
+            <div *ngIf="!isMinimized && noData; else standardContent" class="assistant-cc-no-data">
+               <app-assistant-label i18nLabel="{{ noDataLabel }}"></app-assistant-label>
+            </div>
+
+            <ng-template #standardContent>
+               <ng-content></ng-content>
+            </ng-template>
+         </div>
+
+         <div class="assistant-cc-footer assistant-cc-{{ type }}">
+            <ng-content *ngIf="!isMinimized" select="[slot=assistant-cc-footer]"></ng-content>
+         </div>
+      </p-card>
+   </div>
+</div>

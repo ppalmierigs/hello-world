@@ -1,0 +1,99 @@
+@import '../../../../assets/styles/sizes.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-input-type {
+   .assistant-it-xxs-label {
+      font-size: $assistant-xxs-font-size;
+      font-weight: -webkit-calc(#{$assistant-xxs-weigth} + 600);
+      font-weight: -moz-calc(#{$assistant-xxs-weigth} + 600);
+      font-weight: calc(#{$assistant-xxs-weigth} + 600);
+   }
+
+   .assistant-it-xs-label {
+      font-size: $assistant-xs-font-size;
+      font-weight: -webkit-calc(#{$assistant-xs-weigth} + 600);
+      font-weight: -moz-calc(#{$assistant-xs-weigth} + 600);
+      font-weight: calc(#{$assistant-xs-weigth} + 600);
+   }
+
+   .assistant-it-s-label {
+      font-size: $assistant-s-font-size;
+      font-weight: -webkit-calc(#{$assistant-s-weigth} + 400);
+      font-weight: -moz-calc(#{$assistant-s-weigth} + 400);
+      font-weight: calc(#{$assistant-s-weigth} + 400);
+   }
+
+   .assistant-it-m-label {
+      font-size: $assistant-m-font-size;
+      font-weight: -webkit-calc(#{$assistant-m-weigth} + 200);
+      font-weight: -moz-calc(#{$assistant-m-weigth} + 200);
+      font-weight: calc(#{$assistant-m-weigth} + 200);
+   }
+
+   .assistant-it-l-label {
+      font-size: $assistant-l-font-size;
+      font-weight: $assistant-l-weigth;
+   }
+
+   .assistant-it-xl-label {
+      font-size: $assistant-xl-font-size;
+      font-weight: $assistant-xl-weigth;
+   }
+
+   .assistant-it-xxs-input {
+      font-size: $assistant-xxs-font-size;
+      padding-left: $assistant-xxs-padding;
+      padding-right: $assistant-xxs-padding;
+      height: -webkit-calc(2 * #{$assistant-xxs-padding});
+      height: -moz-calc(2 * #{$assistant-xxs-padding});
+      height: calc(2 * #{$assistant-xxs-padding});
+   }
+
+   .assistant-it-xs-input {
+      font-size: $assistant-xs-font-size;
+      padding-left: $assistant-xs-padding;
+      padding-right: $assistant-xs-padding;
+      height: -webkit-calc(2 * #{$assistant-xs-padding});
+      height: -moz-calc(2 * #{$assistant-xs-padding});
+      height: calc(2 * #{$assistant-xs-padding});
+   }
+
+   .assistant-it-s-input {
+      font-size: $assistant-s-font-size;
+      padding-left: $assistant-s-padding;
+      padding-right: $assistant-s-padding;
+      height: -webkit-calc(2 * #{$assistant-s-padding});
+      height: -moz-calc(2 * #{$assistant-s-padding});
+      height: calc(2 * #{$assistant-s-padding});
+   }
+
+   .assistant-it-m-input {
+      font-size: $assistant-s-font-size;
+      padding-left: $assistant-m-padding;
+      padding-right: $assistant-m-padding;
+      height: -webkit-calc(2 * #{$assistant-m-padding});
+      height: -moz-calc(2 * #{$assistant-m-padding});
+      height: calc(2 * #{$assistant-m-padding});
+   }
+
+   .assistant-it-l-input {
+      font-size: $assistant-s-font-size;
+      padding-left: $assistant-l-padding;
+      padding-right: $assistant-l-padding;
+      height: -webkit-calc(2 * #{$assistant-l-padding});
+      height: -moz-calc(2 * #{$assistant-l-padding});
+      height: calc(2 * #{$assistant-l-padding});
+   }
+
+   .assistant-it-xl-input {
+      font-size: $assistant-s-font-size;
+      padding-left: $assistant-xl-padding;
+      padding-right: $assistant-xl-padding;
+      height: -webkit-calc(2 * #{$assistant-xl-padding});
+      height: -moz-calc(2 * #{$assistant-xl-padding});
+      height: calc(2 * #{$assistant-xl-padding});
+   }
+}

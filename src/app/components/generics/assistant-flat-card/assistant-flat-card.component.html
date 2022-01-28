@@ -1,0 +1,8 @@
+<div class="assistant-flat-card">
+   <p-card styleClass="assistant-fc-p-card assistant-fc-{{ radius }}-radius assistant-fc-{{ padding }}-padding">
+      <ng-content></ng-content>
+      <ng-template pTemplate="footer">
+         <ng-content select="[slot=assistant-flat-card-footer]"></ng-content>
+      </ng-template>
+   </p-card>
+</div>

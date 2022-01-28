@@ -1,0 +1,65 @@
+@import '../../../../assets/styles/colors.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-icon-button {
+   .assistant-ic-primary-btn {
+      background-color: $assistant-color-primary;
+      border-color: $assistant-color-primary;
+   }
+
+   .assistant-ic-primary2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-primary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-primary3-btn {
+      color: $assistant-color-primary;
+   }
+
+   .assistant-ic-secondary-btn {
+      background-color: $assistant-color-secondary;
+      border-color: $assistant-color-secondary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-secondary2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-secondary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-secondary3-btn {
+      color: $assistant-color-secondary;
+   }
+
+   .assistant-ic-third-btn {
+      background-color: $assistant-color-third;
+      border-color: $assistant-color-third;
+   }
+
+   .assistant-ic-third2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-third;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-ic-third3-btn {
+      color: $assistant-color-third;
+   }
+
+   .assistant-ic-alert-btn {
+      background-color: $assistant-color-alert;
+      border-color: $assistant-color-alert;
+   }
+
+   .assistant-ic-primary3-btn,
+   .assistant-ic-secondary3-btn,
+   .assistant-ic-third3-btn {
+      background-color: $assistant-color-bg3;
+      border: 0px;
+   }
+}

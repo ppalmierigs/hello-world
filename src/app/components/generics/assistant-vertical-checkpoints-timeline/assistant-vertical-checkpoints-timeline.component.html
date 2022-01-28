@@ -1,0 +1,63 @@
+<div class="assistant-vertical-checkpoints-timeline">
+   <p-timeline [value]="array" align="left" styleClass="assistant-vct">
+      <!-- Marker -->
+      <ng-template pTemplate="marker" let-elem>
+         <span class="assistant-vct-marker-hidden" *ngIf="elem == null"></span>
+         <span
+            class="assistant-vct-marker"
+            *ngIf="elem"
+            [ngClass]="{
+               'assistant-vct-checked-marker': elem.isCheckedMarker,
+               'assistant-vct-pointer-marker': elem.isPointerMarker,
+               'assistant-vct-empty-marker': elem.isEmptyMarker
+            }"
+         >
+            <i class="pi"></i>
+         </span>
+      </ng-template>
+      <ng-template pTemplate="content" let-elem>
+         <table class="assistant-vct-marker-content" *ngIf="elem != null" [ngClass]="{ 'assistant-vct-marker-content-selected': selectedElement === elem }">
+            <tr>
+               <td>
+                  <!-- Box -->
+                  <div class="assistant-vct-marker-box assistant-vct-box-{{ elem.boxType }}" (click)="boxClick.emit(elem)">
+                     <app-assistant-label
+                        size="s"
+                        type="{{ elem.boxTitleType }}"
+                        label="{{ elem.boxTitle }}"
+                        [uppercase]="true"
+                        [bold]="true"
+                     ></app-assistant-label>
+                     <div style="min-height: 6px"></div>
+                     <app-assistant-datatable [data]="elem.boxData" type="{{ elem.boxDataTh }}" fontColor="{{ elem.boxDataTd }}"></app-assistant-datatable>
+                  </div>
+               </td>
+               <td style="width: 70px; max-width: 70px">
+                  <!-- Thumb -->
+                  <img
+                     class="assistant-vct-marker-thumb assistant-vct-marker-thumb-{{ elem.boxType }}"
+                     (click)="thumbClick.emit(elem)"
+                     src="{{ elem.thumbUrl }}"
+                  />
+               </td>
+            </tr>
+         </table>
+         <div class="assistant-vct-marker-content" *ngIf="elem == null"></div>
+      </ng-template>
+      <ng-template pTemplate="opposite" let-elem>
+         <!-- Opposite start / end time -->
+         <table *ngIf="elem" class="assistant-vct-opposite-table">
+            <tr>
+               <td class="assistant-vct-start-time">
+                  <app-assistant-label size="xxs" type="primary" label="{{ elem.start }}" [uppercase]="false" [bold]="true"></app-assistant-label>
+               </td>
+            </tr>
+            <tr>
+               <td class="assistant-vct-end-time">
+                  <app-assistant-label size="xxs" type="primary" label="{{ elem.end }}" [uppercase]="false" [bold]="true"></app-assistant-label>
+               </td>
+            </tr>
+         </table>
+      </ng-template>
+   </p-timeline>
+</div>

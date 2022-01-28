@@ -1,0 +1,11 @@
+<div class="assistant-icon-button">
+   <button
+      pButton
+      pRipple
+      type="button"
+      icon="pi {{ icon }}"
+      class="assistant-ic-{{ size }}-btn assistant-ic-{{ type }}-btn assistant-ic-{{ rotation }}-btn"
+      title="{{ tooltip }}"
+      (click)="click.emit(); $event.stopPropagation()"
+   ></button>
+</div>

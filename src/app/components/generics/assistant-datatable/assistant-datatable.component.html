@@ -1,0 +1,98 @@
+<div class="assistant-datatable">
+   <table class="assistant-dt-table" cellspacing="0" cellpadding="0">
+      <tr *ngFor="let rowData of data">
+         <td
+            *ngFor="let cellData of rowData.cells"
+            class="assistant-dt-{{ cellData.columnWidth }}-width"
+            [ngStyle]="{
+               display: rowData.isAprogressBarRow ? 'none' : 'inherits'
+            }"
+         >
+            <table [attr.cellspacing]="0" [attr.cellpadding]="0">
+               <tr>
+                  <th style="display: flex">
+                     <!-- Label -->
+                     <app-assistant-label
+                        *ngIf="!cellData.labelOnlyIcon"
+                        size="{{ cellData.labelSize ? cellData.labelSize : 's' }}"
+                        type="{{ type }}"
+                        [uppercase]="true"
+                        [bold]="true"
+                        i18nLabel="{{ cellData.i18nLabel }}"
+                     ></app-assistant-label>
+                     <app-assistant-spacer size="xs" *ngIf="!cellData.labelOnlyIcon"></app-assistant-spacer>
+                     <app-assistant-icon
+                        *ngIf="cellData.labelIcon && !cellData.labelButtonIcon"
+                        [icon]="cellData.labelIcon"
+                        [tooltip]="cellData.labelIconTooltip"
+                        [type]="cellData.labelIconType"
+                        size="{{ cellData.labelSize ? cellData.labelSize : 's' }}"
+                     ></app-assistant-icon>
+                     <app-assistant-icon-button
+                        *ngIf="cellData.labelIcon && cellData.labelButtonIcon"
+                        [icon]="cellData.labelIcon"
+                        [tooltip]="cellData.labelIconTooltip"
+                        [type]="cellData.labelButtonIconType"
+                        size="xxs"
+                        (click)="cellData.labelIconClick()"
+                     ></app-assistant-icon-button>
+                  </th>
+               </tr>
+               <tr>
+                  <td style="display: flex">
+                     <!-- Value -->
+                     <app-assistant-label
+                        *ngIf="!cellData.valueOnlyIcon"
+                        size="{{ cellData.valueSize ? cellData.valueSize : 's' }}"
+                        type="{{ fontColor != '' ? fontColor : type }}"
+                        [uppercase]="true"
+                        [bold]="false"
+                        label="{{ cellData.value ? cellData.value : '&nbsp;' }}"
+                        i18nLabel="{{ cellData.i18nValue }}"
+                        maxWidth="{{ cellData.columnMaxWidth !== null && cellData.columnMaxWidth !== '' ? cellData.columnMaxWidth : '' }}"
+                        [ellipsis]="cellData.columnMaxWidth !== null && cellData.columnMaxWidth !== ''"
+                     ></app-assistant-label>
+                     <app-assistant-spacer *ngIf="!cellData.valueOnlyIcon" size="xs"></app-assistant-spacer>
+                     <app-assistant-icon
+                        *ngIf="cellData.valueIcon && !cellData.valueButtonIcon"
+                        [icon]="cellData.valueIcon"
+                        [tooltip]="cellData.valueIconTooltip"
+                        [type]="cellData.valueIconType"
+                        size="{{ cellData.valueSize ? cellData.valueSize : 's' }}"
+                     ></app-assistant-icon>
+                     <app-assistant-icon-button
+                        *ngIf="cellData.valueIcon && cellData.valueButtonIcon"
+                        [icon]="cellData.valueIcon"
+                        [tooltip]="cellData.valueIconTooltip"
+                        [type]="cellData.valueButtonIconType"
+                        size="xxs"
+                        (click)="cellData.valueIconClick()"
+                     ></app-assistant-icon-button>
+                  </td>
+               </tr>
+               <tr *ngIf="rowData != data[data.length - 1]">
+                  <!-- Not add spacer row at the end of the table -->
+                  <td
+                     [ngStyle]="{
+                        'min-height': rowData.spaceAfter ? rowData.spaceAfter : '10px',
+                        height: rowData.spaceAfter ? rowData.spaceAfter : '10px',
+                        'max-height': rowData.spaceAfter ? rowData.spaceAfter : '10px'
+                     }"
+                  ></td>
+               </tr>
+            </table>
+         </td>
+         <td *ngIf="rowData.isAprogressBarRow" [attr.colspan]="rowData.progressBarColSpan">
+            <p-progressBar [value]="rowData.progressBarValue" [showValue]="false"></p-progressBar>
+            <div style="min-height: 3px"></div>
+            <app-assistant-label
+               type="{{ type }}"
+               size="{{ rowData.progressBarUnderLabelSize ? rowData.progressBarUnderLabelSize : 's' }}"
+               [uppercase]="true"
+               [bold]="true"
+               label="{{ rowData.progressBarUnderLabel ? rowData.progressBarUnderLabel : '&nbsp;' }}"
+            ></app-assistant-label>
+         </td>
+      </tr>
+   </table>
+</div>

@@ -1,0 +1,110 @@
+@import '../../../../assets/styles/colors.scss';
+@import '../../../../assets/styles/sizes.scss';
+
+:host ::ng-deep .assistant-button {
+   display: inline-flex;
+
+   .assistant-b-conceal {
+      opacity: 0.2;
+   }
+
+   .assistant-b-bold {
+      font-weight: bold;
+   }
+
+   .assistant-b-uppercase {
+      text-transform: uppercase;
+   }
+
+   .assistant-b-primary-btn {
+      background-color: $assistant-color-primary;
+      border-color: $assistant-color-primary;
+   }
+
+   .assistant-b-primary2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-primary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-secondary-btn {
+      background-color: $assistant-color-secondary;
+      border-color: $assistant-color-secondary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-secondary2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-secondary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-third-btn {
+      background-color: $assistant-color-third;
+      border-color: $assistant-color-third;
+   }
+
+   .assistant-b-third2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-third;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-alert-btn {
+      background-color: $assistant-color-alert;
+      border-color: $assistant-color-alert;
+   }
+
+   .assistant-b-alert2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-alert;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-confirm-btn {
+      background-color: $assistant-color-confirm;
+      border-color: $assistant-color-confirm;
+   }
+
+   .assistant-b-confirm2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-confirm;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-other-btn {
+      background-color: $assistant-color-other;
+      border-color: $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-other2-btn {
+      background-color: white;
+      border: 2px solid $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-b-xxs-label {
+      font-size: $assistant-xxs-font-size !important;
+   }
+
+   .assistant-b-xs-label {
+      font-size: $assistant-xs-font-size !important;
+   }
+
+   .assistant-b-s-label {
+      font-size: $assistant-s-font-size !important;
+   }
+
+   .assistant-b-m-label {
+      font-size: $assistant-m-font-size !important;
+   }
+
+   .assistant-b-l-label {
+      font-size: $assistant-l-font-size !important;
+   }
+
+   .assistant-b-xl-label {
+      font-size: $assistant-xl-font-size !important;
+   }
+}

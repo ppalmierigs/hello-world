@@ -1,0 +1,69 @@
+@import '../../../../assets/styles/colors.scss';
+
+/*
+   Splitted files for exceeded maximum budget;
+*/
+
+:host ::ng-deep .assistant-complete-card {
+   .assistant-cc-primary {
+      background-color: $assistant-color-primary;
+   }
+
+   .assistant-cc-primary2 {
+      background-color: white;
+      border: 2px solid $assistant-color-primary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-cc-secondary {
+      background-color: $assistant-color-secondary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-cc-secondary2 {
+      background-color: white;
+      border: 2px solid $assistant-color-secondary;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-cc-third {
+      background-color: $assistant-color-third;
+   }
+
+   .assistant-cc-third2 {
+      background-color: white;
+      border: 2px solid $assistant-color-third;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-cc-alert {
+      background-color: $assistant-color-alert;
+   }
+
+   .assistant-cc-alert2 {
+      background-color: white;
+      border: 2px solid $assistant-color-alert;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-cc-confirm {
+      background-color: $assistant-color-confirm;
+   }
+
+   .assistant-cc-confirm2 {
+      background-color: white;
+      border: 2px solid $assistant-color-confirm;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-cc-other {
+      background-color: $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+
+   .assistant-cc-other2 {
+      background-color: white;
+      border: 2px solid $assistant-color-other;
+      color: $assistant-color-text1;
+   }
+}

@@ -34,6 +34,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^12.1.1",
     "typescript": "~4.3.5"
   },
   "description": "Hello ========= Una libreria di prova ## Installazione   `npm install hello-world`",

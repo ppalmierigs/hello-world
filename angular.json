@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "hello-world-linooki": {
+      "projectType": "library",
+      "root": "projects/hello-world-linooki",
+      "sourceRoot": "projects/hello-world-linooki/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/hello-world-linooki/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/hello-world-linooki/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/hello-world-linooki/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hello-world-linooki/src/test.ts",
+            "tsConfig": "projects/hello-world-linooki/tsconfig.spec.json",
+            "karmaConfig": "projects/hello-world-linooki/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "hello-world"
